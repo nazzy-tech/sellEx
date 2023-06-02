@@ -1,0 +1,127 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.container nav{
+    height: 10%;
+    display: inline;
+}
+.container nav img{
+    width: 20%;
+    margin-left: -6%;
+    margin-top: -3%;
+}
+.container nav button{
+    font-size: 14px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 14px 22px;
+    float: right;
+    margin-top: 5%;
+}
+.container nav button:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: beige;
+}
+.main-section{
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+.main-section .sub-container{
+    width: 60%;
+}
+.main-section .sub-container .notes{
+   display: flex;
+}
+.main-section .sub-container .notes img{
+    width: 50%;
+}
+.main-section .img-container{
+    width: 40%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+.main-section .img-container img{
+    width: 140%;
+    height: auto;
+}
+.main-section .sub-container .txt .first-img{
+    width: 150%;
+}
+.main-section .sub-container .txt .second-img{
+    width: 70%;
+}
+section .main-section .sub-container .wait-list{
+    width: 98%;
+    margin: auto;
+}
+section .main-section .sub-container .wait-list input{
+    padding: 10px 30px;
+}
+section .main-section .sub-container .wait-list button{
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+}
+section .main-section .sub-container .wait-list button:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: beige;
+}
+section .logo{
+    width: 84%;
+    margin: auto;
+    margin-top: -15%;
+}
+section .logo .fa-square-instagram{
+    font-size: 50px;
+    color: hsl(rgb(48 100 67)100%, rgb(7 100 62)100%, rgb(312 57 50)100%);
+    padding-right: 10px;
+}
+section .logo .fa-square-twitter{
+    font-size: 50px;
+    color: #1d9bf0;
+    padding-right: 10px;
+}
+section .logo .fa-facebook{
+    font-size: 50px;
+    color: #1877f2;
+    padding-right: 10px;
+}
+section .logo .fa-linkedin{
+    font-size: 50px;
+    color: #0076b2;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 1000px){
+    .container{
+        width: 85%;
+        display: block;
+    }
+    .container nav{
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+    .container nav img{
+        width: 50%;
+        position: absolute;
+    }
+}
