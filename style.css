@@ -87,7 +87,7 @@ section .main-section .sub-container .wait-list button{
     padding: 11px 15px;
     background-color: var(--primary-color);
     border-radius: 5px;
-    margin-left: -5px;
+    margin-left: -6px;
 }
 section .main-section .sub-container .wait-list button:hover{
     cursor: pointer;
