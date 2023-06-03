@@ -26,6 +26,7 @@ section{
 }
 .container nav button{
     font-size: 14px;
+    font-family: sans-serif, serif;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: 14px 22px;
@@ -62,11 +63,14 @@ section{
     width: 140%;
     height: auto;
 }
-.main-section .sub-container .txt .first-img{
-    width: 130%;
+.main-section .sub-container .txt p{
+    font-size: 20px;
+    font-family: sans-serif, serif;
+    letter-spacing: 1px;
+    margin-left: 1%;
 }
-.main-section .sub-container .txt .second-img{
-    width: 55%;
+.main-section .sub-container .txt span{
+    font-weight: 600;
 }
 section .main-section .sub-container .wait-list{
     width: 98%;
@@ -79,6 +83,7 @@ section .main-section .sub-container .wait-list input{
 }
 section .main-section .sub-container .wait-list button{
     color: var(--secondary-color);
+    font-family: sans-serif, serif;
     padding: 11px 15px;
     background-color: var(--primary-color);
     border-radius: 5px;
@@ -92,7 +97,7 @@ section .main-section .sub-container .wait-list button:hover{
 section .logo{
     width: 84%;
     margin: auto;
-    margin-top: -18%;
+    margin-top: -15%;
 }
 section .logo .fa-square-instagram, section .logo .fa-square-twitter,section .logo .fa-facebook,section .logo .fa-linkedin{
     font-size: 30px;
@@ -101,18 +106,57 @@ section .logo .fa-square-instagram, section .logo .fa-square-twitter,section .lo
 }
 
 /* Mobile */
-@media screen and (max-width: 1000px){
-    .container{
-        width: 85%;
-        display: block;
-    }
-    .container nav{
-        margin: auto;
-        display: block;
-        position: relative;
+@media only screen and (max-width: 1000px){
+    body{
+        width: 100%;
     }
     .container nav img{
         width: 50%;
-        position: absolute;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container nav button{
+        display: none;
+    }
+    .main-section .sub-container{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-section .sub-container .notes img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -15%;
+        display: block;
+    }
+    /* .main-section .sub-container .txt{ */
+        /* width: 100%; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+    /* } */
+    .main-section .sub-container .txt p{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+    .main-section .img-container img{
+        display: none;
+    }
+    section .main-section .sub-container .wait-list{
+        width: 100%;
+        margin: auto;
+    }
+    section .main-section .sub-container .wait-list button{
+        margin-top: 10%;
+        padding: 8px 105px;
+
+    }
+    section .logo{
+        margin-top: 5%;
+        margin-left: 15%;
     }
 }
